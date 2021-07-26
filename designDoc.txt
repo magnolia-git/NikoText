@@ -1,0 +1,14 @@
+Niko Text Box Generator
+
+What: Application that generates dialog boxes with an accompanying portrait. Themed with Oneshot in mind.
+
+Why: Would be fun, and useful with any sort of video editing.
+
+Further details
+
+	Arrays can be used to store objects. Said objects would contain:
+
+	-Text to print in dialog box
+	-Portrait
+
+	

@@ -1,0 +1,63 @@
+body {
+  background-color: #dddddd;
+}
+button {
+  margin: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+#portraits {
+  float: left;
+  width: 170px;
+
+  overflow-y: scroll;
+}
+
+#preview {
+  text-align: center;
+}
+
+#text-edit {
+  text-align: center;
+}
+
+div {
+
+}
+
+#container {
+  vertical-align: middle;
+  background-color: black;
+  margin: auto;
+  width: 960px;
+  height: 75%;
+  overflow: scroll;
+}
+
+@font-face {
+  font-family: "Terminus";
+  font-weight: bold;
+  src: url("TerminusTTF-Bold.ttf") format("truetype");
+  color: white;
+}
+
+.hidden {
+  position: absolute;
+  left:     -10000px;
+  top:      auto;
+  width:    1px;
+  height:   1px;
+  overflow: hidden;
+}
+
+#frames {
+  text-align: center;
+  width: 100%;
+}
+
+canvas {
+  margin: 25px;
+  border: 1px solid;
+  border-color: white;
+}

@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>Oneshot: Niko Text Generator</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="text.js"></script>
+	</head>
+
+	<body onload="canvasLoad()">
+		<img class="hidden" src="Portraits/none.png" alt="No portrait" id="none" width="48" height="48"></img>
+		<img class="hidden" src="Box.png" alt="Box" id="Box"></img>
+		<audio id="click" preload><source src="text.wav" type="audio/wav"></audio>
+		<div id="container">
+      <div id="portraits">
+        <button onclick="setPortrait('Niko1')"><img src="Portraits/Niko1.png" alt="Niko" id="Niko1" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko2')"><img src="Portraits/Niko2.png" alt="Niko Happy" id="Niko2" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko3')"><img src="Portraits/Niko3.png" alt="Niko Cry" id="Niko3" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko4')"><img src="Portraits/Niko4.png" alt="Niko Distressed" id="Niko4" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko5')"><img src="Portraits/Niko5.png" alt="Niko Distressed Meow" id="Niko5" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko6')"><img src="Portraits/Niko6.png" alt="Niko Distressed Talk" id="Niko6" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko7')"><img src="Portraits/Niko7.png" alt="Niko Distressed 2" id="Niko7" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko8')"><img src="Portraits/Niko8.png" alt="Niko Eyes Closed" id="Niko8" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko9')"><img src="Portraits/Niko9.png" alt="Niko Eyes Closed 2" id="Niko9" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko10')"><img src="Portraits/Niko10.png" alt="Niko Gas Mask" id="Niko10" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko11')"><img src="Portraits/Niko11.png" alt="Niko Huh" id="Niko11" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko12')"><img src="Portraits/Niko12.png" alt="Niko Less Sad" id="Niko12" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko13')"><img src="Portraits/Niko13.png" alt="Niko Pancakes" id="Niko13" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko14')"><img src="Portraits/Niko14.png" alt="Niko Sad" id="Niko14" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko15')"><img src="Portraits/Niko15.png" alt="Niko Shock" id="Niko15" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko16')"><img src="Portraits/Niko16.png" alt="Niko Smile" id="Niko16" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko17')"><img src="Portraits/Niko17.png" alt="Niko Speak" id="Niko17" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko18')"><img src="Portraits/Niko18.png" alt="Niko Surprised" id="Niko18" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko19')"><img src="Portraits/Niko19.png" alt="Niko Upset" id="Niko19" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko20')"><img src="Portraits/Niko20.png" alt="Niko Upset Meow" id="Niko20" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko21')"><img src="Portraits/Niko21.png" alt="Niko Upset 2" id="Niko21" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko22')"><img src="Portraits/Niko22.png" alt="Niko What" id="Niko22" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko23')"><img src="Portraits/Niko23.png" alt="Niko What 2" id="Niko23" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko24')"><img src="Portraits/Niko24.png" alt="Niko wtf" id="Niko24" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko25')"><img src="Portraits/Niko25.png" alt="Niko wtf2" id="Niko25" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko26')"><img src="Portraits/Niko26.png" alt="Niko Yawn" id="Niko26" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko27')"><img src="Portraits/Niko27.png" alt="Niko 2" id="Niko27" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko28')"><img src="Portraits/Niko28.png" alt="Niko 3" id="Niko28" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko29')"><img src="Portraits/Niko29.png" alt="Niko 4" id="Niko29" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko30')"><img src="Portraits/Niko30.png" alt="Niko 5" id="Niko30" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko31')"><img src="Portraits/Niko31.png" alt="Niko 6" id="Niko31" width="48" height="48"></img></button>
+        <button onclick="setPortrait('Niko32')"><img src="Portraits/Niko32.png" alt="Niko Oof" id="Niko32" width="48" height="48"></img></button>
+        <button onclick="setPortrait()"><img src="Portraits/clear.png" alt="Clear Portrait" id="Clear" width="48" height="48"></img></button>
+      </div>
+      <div id="preview">
+        <canvas width="640px" height="480px"></canvas>
+      </div>
+			<div>
+				<p id="frames">
+
+				</p>
+
+			</div>
+      <div id="text-edit">
+        <form>
+          <label style="color: white" for="dialogue">Dialogue:</label><br>
+          <textarea id="line1" value="" rows="4" cols="50" onchange="updateText('line1')"></textarea><br>
+        </form>
+				<button onclick="createTextBox()">Create Text Box</button>
+      </div>
+		</div>
+	</body>
+
+</html>
